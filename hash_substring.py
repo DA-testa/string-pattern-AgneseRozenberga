@@ -7,8 +7,10 @@ def read_input():
     izvelne = input().strip()
     if izvelne == "F":
         filename = input().strip()
-        with open(filename) as f:
-            return  (f.readLine().strip(),f.readLine().strip())
+        with open(filename, 'r') as f:
+            pattern =f.readLine().strip()
+            text = f.readLine().strip()
+            return  pattern, text
 
     else:
        
