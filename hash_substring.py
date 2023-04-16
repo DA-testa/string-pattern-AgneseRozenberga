@@ -5,14 +5,15 @@ def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
     izvelne = input().strip()
-    if izvelne == "F":
+    if izvelne == "I":
+        return (input().rstrip(), input().rstrip())
+
+        
+
+    else:
         filename = input().strip()
         with open(filename, 'r') as f:
             return  (f.readline().strip(), f.readline().strip())
-
-    else:
-        return (input().rstrip(), input().rstrip())
-    
     # after input type choice
     # read two lines 
     # first line is pattern 
