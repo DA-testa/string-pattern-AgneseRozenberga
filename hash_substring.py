@@ -1,3 +1,4 @@
+#Agnese Rozenberga 11. grupa 221RDB117
 # python3
 
 def read_input():
