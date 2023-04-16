@@ -42,7 +42,7 @@ def get_occurrences(pattern, text):
     ash =0
     hash = 0
 
-    for i in range (lengthp)
+    for i in range (lengthp):
         ash = (ash * x + ord(pattern[i])) % p
         hash = (hash* x + ord(text[i]))%p
 
