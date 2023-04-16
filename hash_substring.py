@@ -8,11 +8,7 @@ def read_input():
     if izvelne == "F":
         filename = input().strip()
         with open(filename, 'r') as f:
-            check = f.realines()
-            if len(check) == 2:
-                return check[0].strip(), check[1].strip()
-
-            # return  (f.readline().strip(), f.readline().strip())
+            return  (f.readline().strip(), f.readline().strip())
 
     else:
         return (input().rstrip(), input().rstrip())
