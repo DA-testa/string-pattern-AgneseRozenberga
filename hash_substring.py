@@ -13,8 +13,10 @@ def read_input():
             return  pattern, text
 
     else:
-       
-    
+        pattern =f.readLine().strip()
+        text = f.readLine().strip()
+        return (input().rstrip(), input().rstrip())
+
     # after input type choice
     # read two lines 
     # first line is pattern 
@@ -23,7 +25,6 @@ def read_input():
     # return both lines in one return
     
     # this is the sample return, notice the rstrip function
-        return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
