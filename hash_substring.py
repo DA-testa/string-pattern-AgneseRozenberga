@@ -44,11 +44,11 @@ def get_occurrences(pattern, text):
 
     for i in range (lengthp)
         ash = (ash * x + ord(pattern[i])) % p
-        hash = (hash* x + ord(text[i]))%part
+        hash = (hash* x + ord(text[i]))%p
 
     powofx = 1
     for i in range(lengthp - 1):
-        powofx = (powofx * x) % part
+        powofx = (powofx * x) % p
     
     occurances = []
     for i in range(lengtht - lengthp+1):
