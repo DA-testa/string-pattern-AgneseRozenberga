@@ -64,7 +64,7 @@ def get_occurrences(pattern, text):
 
 # this part launches the functions
 if __name__ == '__main__':
-    part, text = read_input()
+    pattern, text = read_input()
     occurances = get_occurrences(pattern, text)
     print_occurrences(occurances)
 
