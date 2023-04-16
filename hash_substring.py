@@ -8,15 +8,11 @@ def read_input():
     if izvelne == "F":
         filename = input().strip()
         with open(filename, 'r') as f:
-            pattern =f.readLine().strip()
-            text = f.readLine().strip()
-            return  pattern, text
+            return  (f.readLine().strip(),f.readLine().strip())
 
     else:
-        pattern =f.readLine().strip()
-        text = f.readLine().strip()
-        return (input().rstrip(), input().rstrip())
-
+       
+    
     # after input type choice
     # read two lines 
     # first line is pattern 
@@ -25,6 +21,7 @@ def read_input():
     # return both lines in one return
     
     # this is the sample return, notice the rstrip function
+        return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
